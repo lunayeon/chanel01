@@ -1,0 +1,78 @@
+.main .container {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+/**************************************************** 
+Header Style Code Start
+*****************************************************/
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 150px;
+  transition: all 0.4s;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+header .main-nav {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .nav {
+  margin: 0 80px;
+}
+
+header .nav p {
+  font-size: 30px;
+  align-items: center;
+  color: #fff;
+}
+
+header .logo {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header .logo img {
+  width: 80px;
+}
+
+header .hambuger {
+  margin: 0 80px;
+}
+
+header .container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section.hero {
+  width: 100%;
+  position: relative;
+}
+
+section.hero .hero-bg img {
+  width: 100%;
+}
+
+section.hero .cha-effect {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

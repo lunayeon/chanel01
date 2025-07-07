@@ -1,0 +1,475 @@
+body{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+
+  overflow-x: hidden;
+}
+
+.wrapper {
+  max-width: 1920px;
+  width: 100%;
+  margin: auto;
+  height: auto;
+}
+
+#header {
+  align-items: center;
+  width: 1920px;
+  height: auto;
+  position: fixed;
+  left: 0;
+  z-index: 999;
+  text-align: center;
+  top: 3.625rem;
+}
+
+#header nav {
+  position: absolute;
+  top: 0;
+  height: inherit;
+  line-height: inherit;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+#header nav.left {
+  left: 2em;
+  color: #fff;
+}
+
+#header .logo {
+  display: inline-block;
+  transform: translate(-50%, -50%);
+}
+
+#header nav.right {
+  right: 2em;
+}
+
+#banner {
+  width: 1920px;
+  height: 1080px;
+  background-image: url(../img/main.png);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+#banner .content {
+  opacity: 1;
+  display: block;
+  padding: 26.625rem 0 13rem 0;
+  align-items: center;
+  text-align: center;
+}
+
+#banner h1,
+h2,
+p {
+  color: #fff;
+}
+
+.ch-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5rem;
+}
+
+#banner .box {
+  font-size: 9rem;
+  font-family: var(--gnb-font);
+  /* line-height: 3em; */
+  /* letter-spacing: 9.2rem; */
+  text-align: center;
+  margin: 5rem 0.5rem 13rem 0;
+  opacity: 0;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#banner .ch-sub {
+  transition: all 3s ease-in-out;
+}
+
+#banner .ch-pe {
+  font-family: var(--last-font);
+  font-size: 3.125rem;
+  letter-spacing: 4.25rem;
+  margin: 0 0 0 1.5em;
+  transition: all 3s ease-in-out;
+}
+
+#banner .ch-sub-text {
+  font-family: var(--last-font);
+  font-size: 30px;
+  margin: 3.9375rem 0 0 0;
+  transition: all 2.5s ease-in-out;
+}
+
+/* chanel intro video */
+.ch-video {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  margin: 0 auto;
+}
+
+.ch-video video {
+  width: 100%;
+}
+
+/* Coco Chanel 'coco-main' Info */
+.coco-main {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  background-color: var(--sub-color);
+  display: flex;
+  overflow: hidden;
+}
+
+.coco-se-img img {
+  width: 1356px;
+  position: relative;
+  transform: translate(287px, 206px);
+  opacity: 0;
+  top: 206px;
+  z-index: 99;
+}
+
+.coco-text {
+  position: absolute;
+}
+
+.coco-title01,
+.coco-title02 {
+  position: absolute;
+  font-family: var(--coco-font);
+  opacity: 0;
+}
+
+.coco-title01 {
+  font-size: 500px;
+  left: 0;
+  top: 227px;
+}
+
+.coco-title02 {
+  font-size: 400px;
+  /* transform: translate(1010px, 450px); */
+  top: 667px;
+  left: 2000px;
+}
+
+.coco-sub01,
+.coco-sub02 {
+  opacity: 0;
+  position: absolute;
+  font-family: var(--main-font);
+}
+
+.coco-sub01 {
+  font-size: 30px;
+  width: 346px;
+  /* transform: translate(328px, 708px); */
+  left: 0;
+  top: 708px;
+}
+
+.coco-sub02 {
+  font-size: 40px;
+  width: 540px;
+  /* transform: translate(1155px, 310px); */
+  left: 2000px;
+  top: 346px;
+}
+
+/* Coco Chanel Info video */
+.ch-intro-v {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  background-color: var(--sub-color);
+  margin: 0 auto;
+  display: flex;
+}
+
+.ch-intro-v video {
+  width: 1920px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Chanel Year */
+
+.year {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  background-color: var(--sub-color);
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.y-text {
+  z-index: 999;
+  position: absolute;
+  font-family: var(--last-font);
+  font-size: 300px;
+  fill: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+}
+
+.year-img {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  top: 150px;
+  opacity: 0;
+  left: 2000px;
+}
+
+/* Horizontal scroll Product */
+.prWrapper {
+  /* width: 13440px; */
+  background: #000;
+  /* overflow-x: hidden; */
+  /* height: 1080px; */
+  /* display: flex; */
+  /* flex-wrap: nowrap; */
+}
+
+.product-scroll {
+  width: fit-content;
+  display: flex;
+  /* flex-direction: column; */
+}
+
+.pr-title {
+  position: absolute;
+  font-family: var(--main-font);
+  font-size: 300px;
+  color: #fff;
+}
+
+.pr-sub {
+  position: absolute;
+  font-family: var(--main-font);
+  font-size: 50px;
+  color: #fff;
+}
+
+.pr-ex {
+  position: absolute;
+  font-family: var(--ex-font);
+  font-size: 25px;
+  color: #fff;
+}
+
+/* Horizontal scroll Product - no.5 - section1 */
+
+.no5-section1 {
+  position: relative;
+  overflow: hidden;
+  width: 1920px;
+  height: 1080px;
+}
+
+.no5-main-img {
+  position: absolute;
+  top: 169px;
+  left: 530px;
+}
+
+.no5-title01 {
+  left: 900px;
+  top: 225px;
+}
+
+.no5-title02 {
+  left: 1065px;
+  top: 315px;
+}
+
+.no5-title03 {
+  left: 920px;
+  top: 495px;
+}
+
+.no5-sub {
+  top: 640px;
+  left: 1155px;
+}
+
+.no5-ex {
+  top: 790px;
+  left: 970px;
+}
+
+/* Horizontal scroll Product - no.5 - section2 */
+.no5-section2 {
+  width: 1920px;
+  height: 1080px;
+  background: #000;
+  position: relative;
+  overflow: hidden;
+}
+
+/* .no5-se2-img {
+  position: absolute;
+  z-index: 999;
+} */
+
+.no5-02 {
+  left: 0;
+  top: 0;
+}
+
+.no5-03 {
+  position: absolute;
+  top: 530px;
+  left: 980px;
+  width: 359px;
+  height: 450px;
+}
+
+.se2-title01,
+.se2-title02 {
+  position: absolute;
+  font-family: var(--main-font);
+  font-size: 150px;
+  color: rgba(247, 203, 91, 0.3);
+}
+
+.se2-title01 {
+  left: 944px;
+  top: 150px;
+}
+
+.se2-title02 {
+  left: 1153px;
+  top: 305px;
+}
+
+.se2-ex {
+  position: absolute;
+  left: 1355px;
+  top: 591px;
+  color: #fff;
+  font-family: var(--ex-font);
+  font-size: 25px;
+}
+
+/* Horizontal scroll Product - no.5 - section3 - video */
+
+.no5-section3 {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.no5-section3 video {
+  width: 1920px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.gab-section1 {
+  position: relative;
+  overflow: hidden;
+  width: 1920px;
+  height: 1080px;
+  background: #000;
+}
+
+.gab-main-img {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+
+.gab01 {
+  left: 151px;
+  top: 250px;
+}
+
+.gab02 {
+  left: 1130px;
+  top: 453px;
+}
+
+.gab-sub01 {
+  top: 733px;
+  left: 580px;
+}
+.gab-sub02 {
+  top: 800px;
+  left: 542px;
+}
+
+.gab-ex {
+  top: 783px;
+  left: 1212px;
+}
+
+.gab-section2 {
+  position: relative;
+  overflow: hidden;
+  width: 1920px;
+  height: 1080px;
+  background: #000;
+}
+
+.gab-section3 {
+  position: relative;
+  overflow: hidden;
+  width: 1920px;
+  height: 1080px;
+  /* background: #000; */
+}
+
+.gab-section3 video{
+  width: 1920px;
+  height:auto;
+}
+
+.gab-02 {
+  left: 104px;
+  top: 129px;
+}
+
+.gab-03 {
+  left: 805px;
+  top: 583px;
+}
+
+.gab-04 {
+  left: 1557px;
+  top: 171px;
+}
+
+.gab-se2-sub {
+  position: absolute;
+  font-family: var(--main-font);
+  color: rgba(253, 218, 130, 0.3);
+  font-size: 200px;
+  left: 743px;
+  top: 318px;
+}

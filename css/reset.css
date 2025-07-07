@@ -1,0 +1,63 @@
+/* 요소 스타일 초기화 */
+
+/* slot animation */
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+
+/* CDN Font Link */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Italianno&display=swap");
+
+@font-face {
+  /* Gotham 폰트 적용 */
+  font-family: "Gotham";
+  src: url("../font/GothamBook.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  /* Butler 폰트 적용 */
+  font-family: "Butler-regular";
+  src: url("../font/Butler.woff") format("truetype");
+  font-weight: normal;
+}
+
+/* Custom Root Style Guide */
+:root {
+  --gnb-font: "Gotham";
+  --main-font: "Butler-regular";
+  --coco-font: "Italianno", cursive;
+  --last-font: "Italiana", sans-serif;
+  --ex-font: "pretendard";
+
+  --main-color: #000;
+  --sub-color: #e1e1e1;
+  --point-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #111111;
+  font-family: var(--font-main);
+}
+
+em {
+  font-style: normal;
+}
